@@ -1,0 +1,16 @@
+
+server:
+    port: 8070
+
+keycloak:
+    realm: myrealm
+    auth-server-url: http://localhost:8080
+    ssl-required: external
+    resource: myapp
+    credentials:
+        secret: cC7FsdxNg25baarnumepdsRThbd6PP5X
+    use-resource-role-mappings: true
+    public-client: false
+    bearer-only: true
+    principal-attribute: preferred_username
+    cors: true    
